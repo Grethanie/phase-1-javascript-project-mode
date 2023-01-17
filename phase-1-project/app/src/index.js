@@ -1,3 +1,12 @@
+let pokemonList = [
+  "ditto",
+  "charizard",
+  "dragonite",
+  "togekiss",
+  "bulbasaur",
+  "farfechd",
+];
+
 document.addEventListener("DOMContentLoaded", async () => {
   let ditto = await get("ditto");
   createCard(ditto);
@@ -11,6 +20,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   createCard(bulbasaur);
   let farfetchd = await get("farfetchd");
   createCard(farfetchd);
+
+
 });
 
 const get = async (pokemon) => {
