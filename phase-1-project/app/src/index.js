@@ -8,8 +8,6 @@ let pokemonList = [
 ];
 
 document.addEventListener("DOMContentLoaded", async () => {
-
-
   pokemonList.forEach(async (pokemon) => {
     createCard(await get(pokemon));
   });
