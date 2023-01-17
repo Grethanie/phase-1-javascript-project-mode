@@ -5,6 +5,7 @@ let pokemonList = [
   "togekiss",
   "pikachu",
   "farfechd",
+  "snafu",
 ];
 
 document.addEventListener("DOMContentLoaded", async () => {
