@@ -8,18 +8,7 @@ let pokemonList = [
 ];
 
 document.addEventListener("DOMContentLoaded", async () => {
-  let ditto = await get("ditto");
-  createCard(ditto);
-  let charizard = await get("charizard");
-  createCard(charizard);
-  let dragonite = await get("dragonite");
-  createCard(dragonite);
-  let togekiss = await get("togekiss");
-  createCard(togekiss);
-  let bulbasaur = await get("bulbasaur");
-  createCard(bulbasaur);
-  let farfetchd = await get("farfetchd");
-  createCard(farfetchd);
+
 
   pokemonList.forEach(async (pokemon) => {
     createCard(await get(pokemon));
