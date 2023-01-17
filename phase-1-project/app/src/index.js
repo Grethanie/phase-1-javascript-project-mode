@@ -21,7 +21,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   let farfetchd = await get("farfetchd");
   createCard(farfetchd);
 
-
+  pokemonList.forEach(async (pokemon) => {
+    createCard(await get(pokemon));
+  });
 });
 
 const get = async (pokemon) => {
