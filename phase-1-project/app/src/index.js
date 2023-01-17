@@ -92,7 +92,7 @@ document.addEventListener("dblclick", () => {
   console.log("i have been dblclicked");
 
   let header = document.getElementById("header");
-
+  let cards = document.getElementById("pokemon-collection-dark");
 
   if (!cards) {
     cards = document.getElementById("pokemon-collection-light");
