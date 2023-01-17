@@ -23,25 +23,25 @@ HTML, CSS, and JavaScript and will communicate with a public API.
 ### Project Requirements
 
 1. Your app must be a HTML/CSS/JS frontend that accesses data from a public API or
-   from a db.json file using json-server. Your API or db.json should return a 
-   collection of at least 5 objects with each object having at least 3 attributes. 
+   from a db.json file using json-server. Your API or db.json should return a
+   collection of at least 5 objects with each object having at least 3 attributes.
    All interactions between the client and the API should be handled
    asynchronously and use JSON as the communication format. Try to avoid using
    an API that requires a key. APIs that are free and require no authorization
-   will be easiest to use. For ideas, see this [list of no-auth APIs][APIs]. If
+   will be easiest to use. For ideas, see this [list of no-auth APIs][apis]. If
    you would like to use an API that requires a key, please consult with your
    instructor on how to protect that key. **NEVER push your API key to github!**
 
 2. Your entire app must run on a single page. There should be NO redirects or
-    reloads. In other words, your project will contain a single HTML file.
+   reloads. In other words, your project will contain a single HTML file.
 
 3. Use at least 3 distinct [event listeners][event-listeners] (3 events of different
    types) that enable interactivity. What this means is that, if you had 3 click
    events, that would only count as 1 distinct event and you would need to add at
    least 2 more. Think search or filter functionality, toggling dark/light mode,
-   upvoting posts, etc. Each of your event listeners should also have its own unique 
+   upvoting posts, etc. Each of your event listeners should also have its own unique
    callback function. These must be added using JavaScript's .addEventListener()
-   method. Events embedded into HTML elements and CSS will not count toward the 
+   method. Events embedded into HTML elements and CSS will not count toward the
    total. Please ask your instructor if you have questions regarding this requirement.
 
 4. Your project must implement at least one instance of array iteration using
@@ -75,10 +75,30 @@ instructors for approval and feedback.
 For your project pitch, you should include:
 
 - The basic story of your application
+
+I would like to make an app that displays 6 pokemon on a trainer's team and shows the details of each.
+
 - The core features of your MVP
+
+displays a pokemin team and their details so that you can see clearly what each pokemon on the team contributes.
+
 - The API data you'll be using and how you'll use it
+
+an open pokemon data api that I will make an initial request from to build the team and images, then display further details on each pokemon
+
 - Challenges you expect to face
+
+I can only make a few GET requests to this API in a short time frame, so I need to be careful to use the data efficiently. I also expect the layout to prove challenging as I need to make it so that the data is well displayed for the user, otherwise it's not providing any added value.
+
 - How you are meeting the requirements of the project
+
+The team will consist of 6 pokemon, one more 'object' than required. Each pokemon will have many details associated with it, which will take care of 3 attributes of each object.
+
+My page does not require redirects to display further information as I will be getting all the data at once, and using hide tags to display it once a button is pushed.
+
+I will use a mouseover event on each image of a pokemon to display a second 'action' image of the pokemon, a click event to display hidden details on each pokemon, and a dblclick event to toggle the background to a dark theme.
+
+I will use a forEach or filter function in order to display the pokemon at all since I will be making a generic create card function and then calling it on each instance.
 
 Feel free to send this pitch to your instructor via slack asynchronously.
 
@@ -184,4 +204,4 @@ You can consult the [json-server docs][] for more information.
 
 [json-server]: https://www.npmjs.com/package/json-server
 [event-listeners]: https://developer.mozilla.org/en-US/docs/Web/Events
-[APIs]:  https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
+[apis]: https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
