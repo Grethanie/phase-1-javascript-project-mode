@@ -32,14 +32,12 @@
   display: flex;
   justify-content: space-around;
   padding: 2rem;
-
 }
 
 .card-light {
   display: flex;
   justify-content: space-around;
   padding: 2rem;
-  /* background-color: rgb(129, 221, 221); */
 }
 
 .hideButton {
