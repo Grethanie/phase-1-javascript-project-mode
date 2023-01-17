@@ -3,7 +3,7 @@ let pokemonList = [
   "charizard",
   "dragonite",
   "togekiss",
-  "bulbasaur",
+  "pikachu",
   "farfechd",
 ];
 
