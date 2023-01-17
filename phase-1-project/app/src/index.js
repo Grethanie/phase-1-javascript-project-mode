@@ -91,6 +91,7 @@ function createCard(pokemonObj) {
 document.addEventListener("dblclick", () => {
   console.log("i have been dblclicked");
 
+  let header = document.getElementById("header");
 
 
   if (!cards) {
